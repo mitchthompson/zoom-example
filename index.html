@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"s">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="Drift.min.js"></script>
-    <script src="script.js"></script>
-    <style>
-  .zoom-container {
-    height: 450px;
-  }
-    </style>
-    <title>Zoom Test</title>
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="magiczoomplus/magiczoomplus.css"/>
+    <script type="text/javascript" src="magiczoomplus/magiczoomplus.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Zoom Example 1</title>
+    <script>
+      var mzOptions = {
+          expand: 'off',
+          zoomPosition: 'right',
+          zoomWidth: '80%'
+      };
+      var mzMobileOptions = {
+          zoomMode: 'magnifier'
+        };
+    </script>
   </head>
-
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="col-6">
-        <img id="zoom" class="img-fluid" src="http://www.laguerraquenohemosvisto.com/galeria/0134_exhi.jpg" data-zoom="http://www.laguerraquenohemosvisto.com/galeria/0134_.jpg">
-      </div>
-
-      <div class="col-6">
-        <div class="zoom-container">
-          <div class="zoom-box">
-            <p>This is a simple description of the picture.</p>
+  <body>
+    <div class="container">
+      <div class="row">
+          <div class="col-12 mt-5 mb-5">
+            <a href="http://www.laguerraquenohemosvisto.com/galeria/0134_.jpg" data-options="mzOptions" class="MagicZoom"><img class="img-fluid" src="http://www.laguerraquenohemosvisto.com/galeria/0134_exhi.jpg"></a>
           </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <ul>
+            <li>
+              <a href="magic.html">Outer zoom</a>
+            </li>
+            <li>
+              <a href="magic-2.html">Inner zoom</a>
+            </li>
+            <li>
+              <a href="magic-3.html">Hover magnifier</a>
+            </li>
+            <li>
+              <a href="magic-3-5.html">Hover circle magnifier</a>
+            </li>
+            <li>
+              <a href="magic-4.html">Click to zoom</a>
+            </li>
+          </ul>
+        </div>
+
         </div>
       </div>
-    </div>
-  </div>
-</body>
-
-</html>
+    </body>
+  </html>
